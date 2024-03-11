@@ -799,7 +799,7 @@
  *
  * With this option disabled, bang-bang will be used. BED_LIMIT_SWITCHING enables hysteresis.
  */
-// #define PIDTEMPBED
+#define PIDTEMPBED
 
 #if ENABLED(PIDTEMPBED)
 // #define MIN_BED_POWER 0
@@ -1659,7 +1659,7 @@
  *     O-- FRONT --+
  */
 #define NOZZLE_TO_PROBE_OFFSET \
-    { -44, -17, -2.01 }
+    { -44, -17, -2.30 }
 
 // Enable and set to use a specific tool for probing. Disable to allow any tool.
 #define PROBING_TOOL 0
