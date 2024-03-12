@@ -805,9 +805,9 @@
 // #define MIN_BED_POWER 0
 // #define PID_BED_DEBUG // Print Bed PID debug data to the serial port.
 
-#define DEFAULT_bedKp 50.71
-#define DEFAULT_bedKi 9.88
-#define DEFAULT_bedKd 173.43
+#define DEFAULT_bedKp 87.11
+#define DEFAULT_bedKi 15.12
+#define DEFAULT_bedKd 334.48
 
 // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #else
@@ -1659,7 +1659,7 @@
  *     O-- FRONT --+
  */
 #define NOZZLE_TO_PROBE_OFFSET \
-    { -44, -17, -2.30 }
+    { -44, -17, -2.28 }
 
 // Enable and set to use a specific tool for probing. Disable to allow any tool.
 #define PROBING_TOOL 0
