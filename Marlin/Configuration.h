@@ -94,7 +94,7 @@
  *
  * :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000]
  */
-#define BAUDRATE 115200
+#define BAUDRATE 250000  // fabie37
 
 // #define BAUD_RATE_GCODE     // Enable G-code M575 to set the baud rate
 
@@ -1672,7 +1672,7 @@
 #define PROBING_MARGIN 10
 
 // X and Y axis travel speed (mm/min) between probes
-#define XY_PROBE_FEEDRATE (133 * 60)
+#define XY_PROBE_FEEDRATE (200 * 60)
 
 // Feedrate (mm/min) for the first approach when double-probing (MULTIPLE_PROBING == 2)
 #define Z_PROBE_FEEDRATE_FAST (4 * 60)
@@ -2134,7 +2134,7 @@
  * these options to restore the prior leveling state or to always enable
  * leveling immediately after G28.
  */
-// #define RESTORE_LEVELING_AFTER_G28
+#define RESTORE_LEVELING_AFTER_G28
 // #define ENABLE_LEVELING_AFTER_G28
 
 /**
@@ -2371,7 +2371,7 @@
 
 // Homing speeds (linear=mm/min, rotational=°/min)
 #define HOMING_FEEDRATE_MM_M \
-    { (20 * 60), (20 * 60), (4 * 60) }
+    { (40 * 60), (40 * 60), (8 * 60) }
 
 // Validate that endstops are triggered on homing moves
 #define VALIDATE_HOMING_ENDSTOPS
